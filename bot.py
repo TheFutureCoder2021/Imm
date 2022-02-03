@@ -1,4 +1,4 @@
-import discord 
+import discord , logging 
 from discord.ext import commands 
 from config import *
 
@@ -27,3 +27,9 @@ async def on_message(message:discord.Message):
 async def ping(ctx:commands.Context):
     """Pong!"""
     await ctx.reply(f'Pong! **{round(bot.latency * 1000)}**`ms`')
+
+
+def main():
+    bot.run(BOT_TOKEN)
+    logging.basicConfig(level=logging.INFO)
+    load_cogs(bot, 'modules', 'cog.py')
