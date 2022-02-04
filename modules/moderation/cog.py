@@ -13,7 +13,7 @@ class Moderation(commands.Cog(name='Moderation',description='Moderation commands
 
     @commands.command(
         name='kick',
-        description='kicks members from the server'
+        description='kicks members from the server',
         aliases = ['abandon']
     )
     async def kick(self, ctx:commands.Context,member:commands.MemberConverter, *,reason:str=None):
