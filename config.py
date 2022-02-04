@@ -13,7 +13,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 BOT_API_URLS = {
     'joke-api': 'https://sv443.net/jokeapi/v2/joke/Any?type=twopart&blacklistFlags=nsfw,religious,political,racist,sexist',
-    'weather-api': 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=b6907d289e50d730ae9d40e3ae85d6a2',
+    'weather-api': 'https://api.openweathermap.org/data/2.5/weather?q=Dhaka&appid=b6907d289e50d730ae9d40e3ae85d6a2',
     'zenquotes-api': 'https://zenquotes.io/api/random'
 }
 
