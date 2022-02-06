@@ -18,7 +18,7 @@ BOT_API_URLS = {
 }
 
 def banned_words():
-    with open('banned_words.json') as f:
+    with open('banned_word.json') as f:
         banned_words = json.load(f)
     return banned_words['swear_words']
 
