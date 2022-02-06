@@ -49,7 +49,28 @@ class Fun(commands.Cog(name='Fun', description='maybe used for fun')):
         ]
         await ctx.send('Question: {}\nAnswer: {}'.format(question, random.choice(responses)))
 
-
+    @commands.command(name='roll', aliases=['r'])
+    async def _roll(self, ctx:commands.Context, *, args):
+        """Roll a dice in NdN format"""
+        try:
+            rolls, limit = args.split('d')
+        except:
+            await ctx.send('Format has to be in NdN!')
+            return
+        try:
+            rolls = int(rolls)
+            limit = int(limit)
+        except:
+            await ctx.send('Format has to be in NdN!')
+            return
+        if rolls > 100 or limit > 100:
+            await ctx.send('Too high!')
+            return
+        if rolls <= 0 or limit <= 0:
+            await ctx.send('Too low!')
+            return
+        result = ', '.join(str(random.randint(1, limit)) for r in range(rolls))
+        await ctx.send(result)
 
 
 
