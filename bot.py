@@ -16,7 +16,7 @@ async def on_ready():
 
 
 
-@bot.event()
+@bot.event
 async def on_message(message:discord.Message):
     if any(words in message.context for words in bot.banned_words):
         await message.delete()
