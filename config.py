@@ -1,7 +1,9 @@
-import dotenv
+import dotenv 
 import discord 
 import os 
 import json 
+
+# hello world
 
 dotenv.load_dotenv()
 
