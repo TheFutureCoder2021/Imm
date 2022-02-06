@@ -1,15 +1,13 @@
-import dotenv 
+
 import discord 
 import os 
 import json 
 
 # hello world
 
-dotenv.load_dotenv()
-
 BOT_NAME = 'Immortals'
 BOT_DESCRIPTION = 'Only for Immortals SMP!'
-BOT_INTENTS = discord.Intetns.all()
+BOT_INTENTS = discord.Intents.all()
 BOT_PREFIX = 'im '
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 
