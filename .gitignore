@@ -1,2 +1,3 @@
 banned_word.json
 .env
+__pycache__
