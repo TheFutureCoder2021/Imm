@@ -33,3 +33,7 @@ def main():
     bot.run(BOT_TOKEN)
     logging.basicConfig(level=logging.INFO)
     load_cogs(bot, 'modules', 'cog.py')
+
+
+if __name__ in "__main__":
+    main()
